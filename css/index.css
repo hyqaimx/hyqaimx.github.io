@@ -30,7 +30,7 @@ body {
 .myName{font-size: .8rem;left: 2.5rem;top: 1.4rem;text-shadow: 0 3px 0 #AAA;letter-spacing: .3rem;}
 .myJob{font-size: .2rem;text-decoration: underline;left: 3.5rem;top: 2.5rem;line-height: .3rem;letter-spacing: .02rem;}
 
-.mainInfo{width: 80%;margin: 0 auto;background: #111;font-size: .2rem;}
+.mainInfo{width: 80%;margin: 0 auto;background: #111;font-size: .2rem;border-bottom: 1px dashed rgba(255,255,255,.3);}
 .row{display: flex;align-items: center;color: white;background: #111;}
 .row .left{position: relative; width: 3.5rem;height:2rem;line-height: 2rem; margin-right: .5rem;background-color: #5F8BF2;font-size: .24rem;letter-spacing: .02rem;overflow: hidden;}
 .row .left span{padding-left: 1rem;}
@@ -45,6 +45,9 @@ body {
 .row:hover{transform: scale(1.02);}
 .row:hover .left:before{transform:translate(50%,-50%) rotate(45deg);}
 .row:hover .left:after{transform: translate(50%,50%) rotate(45deg);}
+.font-14{font-size: .14rem;line-height: .24rem;}
+.hightLight:hover{color: #AAA;}
+.hightLight:hover span{font-size: .16rem;color: #F34347;}
 /*.container {
 	width: 80%;
 	margin: 0 auto;
