@@ -1,2 +1,2 @@
 # hyqaimx.github.io
-my page
+个人主页
