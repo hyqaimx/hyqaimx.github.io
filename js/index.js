@@ -18,7 +18,8 @@ window.onload = function() {
     let lis = ul.getElementsByTagName("li");
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
         for (let i = 0; i < lis.length; i++) {
-            lis[i].tap = function() {
+            lis[i].touchend = function(e) {
+            	e.preventDefault();
                 for (let j = 0; j < lis.length; j++) {
                     lis[j].classList.remove("active");
                 }
