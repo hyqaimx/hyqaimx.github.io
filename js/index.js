@@ -13,13 +13,12 @@
 // }
 window.onload = function() {
     let type = navigator.userAgent.toLowerCase();
-    console.log(type);
     let topNav = document.getElementsByClassName("top-menu")[0];
     let ul = topNav.getElementsByTagName("ul")[0];
     let lis = ul.getElementsByTagName("li");
     if (navigator.userAgent.match(/Android/i) || navigator.userAgent.match(/webOS/i) || navigator.userAgent.match(/iPhone/i) || navigator.userAgent.match(/iPad/i) || navigator.userAgent.match(/iPod/i) || navigator.userAgent.match(/BlackBerry/i) || navigator.userAgent.match(/Windows Phone/i)) {
         for (let i = 0; i < lis.length; i++) {
-            lis[i].touchend = function() {
+            lis[i].tap = function() {
                 for (let j = 0; j < lis.length; j++) {
                     lis[j].classList.remove("active");
                 }
