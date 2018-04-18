@@ -29,7 +29,7 @@ window.onload = function() {
 	} else {
 		console.log("移动端");
 		for(let i = 0; i < lis.length; i++) {
-			lis[i].onclick = function() {
+			lis[i].ontouchend = function() {
 				for(let j = 0; j < lis.length; j++) {
 					lis[j].classList.remove("active");
 				}
