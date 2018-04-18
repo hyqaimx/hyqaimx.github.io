@@ -1,3 +1,4 @@
+
 window.onload = function() {
 	let body = document.getElementsByTagName('body')[0];
 	let topNav = document.getElementsByClassName("top-menu")[0];
@@ -24,4 +25,3 @@ window.onload = function() {
 			ul.classList.add("active");
 		}
 	}
-}

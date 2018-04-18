@@ -88,3 +88,11 @@ body {
 	.row .left:before, .row .left:after{content: none;}
 	.row .right{padding: .1rem .15rem;}
 }
+@media only screen and (min-width: 275px) and (max-width: 340px) {
+	.container{padding: 50px .3rem 50px;}
+	.top-menu ul li{padding: .1rem .05rem;margin-right: .15rem;}
+	.img-contain{width: 1.1rem;height: 1.1rem;min-width: 1.1rem;}
+	.infoList .item{margin-bottom: .05rem;}
+	.infoList .item span{width: 1rem;margin-right: .2rem;}
+	.row .right{align-items: center;}
+}
