@@ -35,8 +35,13 @@ window.onload = function() {
 				lis[i].classList.add('active');
 			}
 		}
-		body.onscroll=function(){
-			alert("滚动事件")
-		}
+		window.addEventListener("scroll",function(){
+			let scrollTop=document.documentElement.scrollTop;
+			if(scrollTop>100){
+				ul.style.background="rgba(0,0,0,.7)";
+			}else{
+				ul.style.background="rgba(0,0,0,0)";
+			}
+		})
 	}
 }
