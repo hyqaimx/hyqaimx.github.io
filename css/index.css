@@ -72,7 +72,7 @@ body {
 @media only screen and (min-width: 275px) and (max-width: 768px) {
 	html{font-size: 80px;}
 	.top-menu{width: 100%;left: 0%;}
-	.top-menu ul{min-width: auto;float: none;padding-left: .3rem;}
+	.top-menu ul{min-width: auto;float: none;padding-left: .3rem;background: rgba(0,0,0,.7);}
 	.top-menu ul:after{width: 120%;}
 	.container,.mainInfo,.footer{width: 100%;}
 	.img-contain{margin: 0;}
