@@ -27,7 +27,6 @@ window.onload = function() {
 			}
 		})
 	} else {
-		alert("移动端");
 		for(let i = 0; i < lis.length; i++) {
 			lis[i].ontouchend = function() {
 				for(let j = 0; j < lis.length; j++) {
@@ -35,6 +34,9 @@ window.onload = function() {
 				}
 				lis[i].classList.add('active');
 			}
+		}
+		body.onscroll=function(){
+			alert("滚动事件")
 		}
 	}
 }
