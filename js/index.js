@@ -38,7 +38,7 @@ window.onload = function() {
 		window.addEventListener("scroll",function(e){
 			if(e.pageY >50){
 				ul.style.background="rgba(0,0,0,.7)"
-			}else{
+			}else if(e.pageX<50){
 				ul.style.background="rgba(0,0,0,0)"
 			}
 		})
