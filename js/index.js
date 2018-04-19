@@ -27,7 +27,7 @@ window.onload = function() {
 			}
 		})
 	} else {
-		console.log("移动端");
+		alert("移动端");
 		for(let i = 0; i < lis.length; i++) {
 			lis[i].ontouchend = function() {
 				for(let j = 0; j < lis.length; j++) {
