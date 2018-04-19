@@ -35,12 +35,11 @@ window.onload = function() {
 				lis[i].classList.add('active');
 			}
 		}
-		window.addEventListener("scroll",function(){
-			let scrollTop=document.documentElement.scrollTop;
-			if(scrollTop>100){
-				ul.style.background="rgba(0,0,0,.7)";
+		window.addEventListener("scroll",function(e){
+			if(e.pageY >50){
+				ul.style.background="rgba(0,0,0,.7)"
 			}else{
-				ul.style.background="rgba(0,0,0,0)";
+				ul.style.background="rgba(0,0,0,0)"
 			}
 		})
 	}
